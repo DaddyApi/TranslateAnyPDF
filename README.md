@@ -97,7 +97,7 @@ This will create folders like `language_test_outputs/es/`, `language_test_output
 
 ## API & Service Information
 
-*   **RapidAPI Marketplace:** Find pricing, subscribe, and manage your API key here: [Link to your API on RapidAPI - YOU NEED TO ADD THIS LINK!]
+*   **RapidAPI Marketplace:** Find pricing, subscribe, and manage your API key here: [Link to API on RapidAPI]
 *   The API is asynchronous. You submit a job, poll for status, and then download the result.
 *   For best layout preservation, use PDFs with selectable text. Scanned image-based PDFs are not suitable for layout-preserving translation with this service.
 
