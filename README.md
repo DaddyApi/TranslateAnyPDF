@@ -31,7 +31,7 @@ Our service focuses on delivering high-quality translations that respect the str
     ```
 
 ### Get Your RapidAPI Key
-1.  Subscribe to the TranslateAnyPDF API on RapidAPI: [Link to your API on RapidAPI]
+1.  Subscribe to the TranslateAnyPDF API on RapidAPI: [Link to your API on RapidAPI](https://rapidapi.com/DaddyApi/api/translateanypdf/)
 2.  Once subscribed, you will find your `X-RapidAPI-Key` in your RapidAPI dashboard.
 3.  You can provide this key to the scripts either via the `--api_key` command-line argument or by setting the `RAPIDAPI_KEY` environment variable.
 
@@ -97,7 +97,7 @@ This will create folders like `language_test_outputs/es/`, `language_test_output
 
 ## API & Service Information
 
-*   **RapidAPI Marketplace:** Find pricing, subscribe, and manage your API key here: [Link to API on RapidAPI]
+*   **RapidAPI Marketplace:** Find pricing, subscribe, and manage your API key here: [Link to API on RapidAPI](https://rapidapi.com/DaddyApi/api/translateanypdf/)
 *   The API is asynchronous. You submit a job, poll for status, and then download the result.
 *   For best layout preservation, use PDFs with selectable text. Scanned image-based PDFs are not suitable for layout-preserving translation with this service.
 
