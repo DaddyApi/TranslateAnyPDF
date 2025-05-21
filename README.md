@@ -27,11 +27,11 @@ Our service focuses on delivering high-quality translations that respect the str
 1.  Clone this repository or download the scripts from the `github_client` directory.
 2.  Navigate to the `github_client` directory:
     ```bash
-    cd path/to/pdf_translator_2/api_rapidapi/github_client
+    cd github_client
     ```
 
 ### Get Your RapidAPI Key
-1.  Subscribe to the TranslateAnyPDF API on RapidAPI: [Link to your API on RapidAPI - YOU NEED TO ADD THIS LINK!]
+1.  Subscribe to the TranslateAnyPDF API on RapidAPI: [Link to your API on RapidAPI]
 2.  Once subscribed, you will find your `X-RapidAPI-Key` in your RapidAPI dashboard.
 3.  You can provide this key to the scripts either via the `--api_key` command-line argument or by setting the `RAPIDAPI_KEY` environment variable.
 
@@ -59,7 +59,7 @@ python3 app.py translate ../test_pdfs/actual_small_sample.pdf es small --api_key
 **2. Analyze a PDF:**
 
 ```bash
-python3 app.py analyze path/to/your/document.pdf --api_key YOUR_RAPIDAPI_KEY
+python3 app.py analyze path/to/your/document.pdf --api_key YOUR_KEY_HERE
 ```
 
 *   This will return metadata about the PDF, such as page count, character count, word count, and text extractability.
@@ -74,7 +74,7 @@ python3 app.py analyze ../test_pdfs/actual_small_sample.pdf --api_key YOUR_KEY_H
 The `batch_translate_test.py` script is designed for testing the translation of a single PDF into multiple languages. This is particularly useful for evaluating font rendering and translation quality across different languages.
 
 **Prerequisites:**
-*   A `languages.csv` file in the root directory of the `pdf_translator_2` project (or specify its path). This file should have a header `language_code` and list the language codes you want to test, one per line. A sample `languages.csv` can be generated or curated based on your needs.
+*   A `languages.csv` file in the root directory of the project (or specify its path). This file should have a header `language_code` and list the language codes you want to test, one per line. A sample `languages.csv` containing all languages included.
 
 **Usage:**
 ```bash
@@ -85,7 +85,7 @@ python3 batch_translate_test.py --input_pdf path/to/your/test_document.pdf --api
 *   **`--api_key YOUR_RAPIDAPI_KEY`**: Your personal key.
 *   **`--tier`** (Optional): Translation tier (`small`, `medium`, `large`). Defaults to `small`.
 *   **`--output_dir`** (Optional): Base directory to save translated PDFs. Defaults to `./language_test_outputs/`. Each language will get its own subfolder.
-*   **`--languages_csv`** (Optional): Path to your `languages.csv` file. Defaults to looking for `../../languages.csv` (relative to the script's location).
+*   **`--languages_csv`** (Optional): Path to your `languages.csv` file. Defaults to looking for `languages.csv` (relative to the script's location).
 
 **Example:**
 ```bash
@@ -110,6 +110,6 @@ For issues or feedback related to the **TranslateAnyPDF API service**, please us
 
 Interested in learning more about our translation technology, upcoming features (like our user-friendly web application!), or discussing higher volume needs?
 
-➡️ **Check out our main site: [https://translateanypdf.com](https://translateanypdf.com)** (Link to your actual website, if different)
+➡️ **Check out our main site: [https://translateanypdf.com](https://translateanypdf.com)**
 
 We're committed to improving document translation and value your feedback!
